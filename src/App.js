@@ -36,12 +36,16 @@ function App (){
 
       return(
         <div className="App">
-             <h1>Free Dictionary</h1>
+            <div className="p-5">
+              <div className="">
+                <div className="">
+                <h1>Free Dictionary</h1>
                <div className="searchBox">
   
                   {/* Taking user input */}
                   <input
                     type="text"
+                    className="w-75"
                     placeholder="Search..."
                     onChange={(e) => {
                       setSearchWord(e.target.value);
@@ -86,6 +90,9 @@ function App (){
  
                 </div>
             )}
+                </div>
+              </div>
+            </div>
         </div>
   
       );
